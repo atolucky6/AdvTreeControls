@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "R5gYjdZ0XoPCA5sf6DL/NAB2frMUKboduWl5N6MswKDRiyl2fkmfj8eX0D/5toRQ1DQxCzEsJWh0UQQgdEQ0Ig==",
+  "success": true,
+  "projectFilePath": "D:\\Work\\Github\\AdvTreeControls\\SampleApp\\SampleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ncdat\\.nuget\\packages\\krypton.toolkit\\60.22.2.32\\krypton.toolkit.60.22.2.32.nupkg.sha512"
+  ],
+  "logs": []
+}

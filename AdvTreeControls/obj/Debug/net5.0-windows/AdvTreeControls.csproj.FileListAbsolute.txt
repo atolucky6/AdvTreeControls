@@ -1,0 +1,13 @@
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.Properties.Resources.resources
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.csproj.GenerateResource.cache
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.AssemblyInfoInputs.cache
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.AssemblyInfo.cs
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.csproj.CoreCompileInputs.cache
+D:\Work\Github\AdvTreeControls\AdvTreeControls\bin\Debug\net5.0-windows\AdvTreeControls.deps.json
+D:\Work\Github\AdvTreeControls\AdvTreeControls\bin\Debug\net5.0-windows\AdvTreeControls.dll
+D:\Work\Github\AdvTreeControls\AdvTreeControls\bin\Debug\net5.0-windows\ref\AdvTreeControls.dll
+D:\Work\Github\AdvTreeControls\AdvTreeControls\bin\Debug\net5.0-windows\AdvTreeControls.pdb
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.dll
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\ref\AdvTreeControls.dll
+D:\Work\Github\AdvTreeControls\AdvTreeControls\obj\Debug\net5.0-windows\AdvTreeControls.pdb

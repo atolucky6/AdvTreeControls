@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0-windows7.0": {
+      "Krypton.Toolkit/60.22.2.32": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/Krypton.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Krypton.Toolkit.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "AdvTreeControls/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/AdvTreeControls.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AdvTreeControls.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Krypton.Toolkit/60.22.2.32": {
+      "sha512": "S0frJcQ1oUBOdlyAblIh7mpEr+6/Yi9xisFXfM55WOje0122Qye9jp/4UVKPCp889jmwZbEgXOGjdDOyzX8Ycg==",
+      "type": "package",
+      "path": "krypton.toolkit/60.22.2.32",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Krypton Stable.png",
+        "krypton.toolkit.60.22.2.32.nupkg.sha512",
+        "krypton.toolkit.nuspec",
+        "lib/net462/Krypton.Toolkit.dll",
+        "lib/net462/Krypton.Toolkit.xml",
+        "lib/net47/Krypton.Toolkit.dll",
+        "lib/net47/Krypton.Toolkit.xml",
+        "lib/net471/Krypton.Toolkit.dll",
+        "lib/net471/Krypton.Toolkit.xml",
+        "lib/net472/Krypton.Toolkit.dll",
+        "lib/net472/Krypton.Toolkit.xml",
+        "lib/net48/Krypton.Toolkit.dll",
+        "lib/net48/Krypton.Toolkit.xml",
+        "lib/net5.0-windows7.0/Krypton.Toolkit.dll",
+        "lib/net5.0-windows7.0/Krypton.Toolkit.xml",
+        "lib/net6.0-windows7.0/Krypton.Toolkit.dll",
+        "lib/net6.0-windows7.0/Krypton.Toolkit.xml",
+        "lib/netcoreapp3.1/Krypton.Toolkit.dll",
+        "lib/netcoreapp3.1/Krypton.Toolkit.xml"
+      ]
+    },
+    "AdvTreeControls/1.0.0": {
+      "type": "project",
+      "path": "../AdvTreeControls/AdvTreeControls.csproj",
+      "msbuildProject": "../AdvTreeControls/AdvTreeControls.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0-windows7.0": [
+      "AdvTreeControls >= 1.0.0",
+      "Krypton.Toolkit >= 60.22.2.32"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ncdat\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Work\\Github\\AdvTreeControls\\SampleApp\\SampleApp.csproj",
+      "projectName": "SampleApp",
+      "projectPath": "D:\\Work\\Github\\AdvTreeControls\\SampleApp\\SampleApp.csproj",
+      "packagesPath": "C:\\Users\\ncdat\\.nuget\\packages\\",
+      "outputPath": "D:\\Work\\Github\\AdvTreeControls\\SampleApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\ncdat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0-windows7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "projectReferences": {
+            "D:\\Work\\Github\\AdvTreeControls\\AdvTreeControls\\AdvTreeControls.csproj": {
+              "projectPath": "D:\\Work\\Github\\AdvTreeControls\\AdvTreeControls\\AdvTreeControls.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0-windows7.0": {
+        "targetAlias": "net5.0-windows",
+        "dependencies": {
+          "Krypton.Toolkit": {
+            "target": "Package",
+            "version": "[60.22.2.32, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
