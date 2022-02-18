@@ -6,15 +6,14 @@ using System.Windows.Forms;
 
 namespace AdvTreeControls
 {
-	public class Node
+	public class TreeNode
 	{
 		#region NodeCollection
-
-		private class NodeCollection : Collection<Node>
+		private class TreeNodeCollection : Collection<TreeNode>
 		{
-			private Node _owner;
+			private TreeNode _owner;
 
-			public NodeCollection(Node owner)
+			public TreeNodeCollection(TreeNode owner)
 			{
 				_owner = owner;
 			}
@@ -25,7 +24,7 @@ namespace AdvTreeControls
 					this.RemoveAt(this.Count - 1);
 			}
 
-			protected override void InsertItem(int index, Node item)
+			protected override void InsertItem(int index, TreeNode item)
 			{
 				if (item == null)
 					throw new ArgumentNullException("item");
@@ -45,7 +44,7 @@ namespace AdvTreeControls
 
 			protected override void RemoveItem(int index)
 			{
-				Node item = this[index];
+				TreeNode item = this[index];
 				item._parent = null;
 				base.RemoveItem(index);
 
@@ -54,7 +53,7 @@ namespace AdvTreeControls
 					model.OnNodeRemoved(_owner, index, item);
 			}
 
-			protected override void SetItem(int index, Node item)
+			protected override void SetItem(int index, TreeNode item)
 			{
 				if (item == null)
 					throw new ArgumentNullException("item");
@@ -75,14 +74,14 @@ namespace AdvTreeControls
 			set { _model = value; }
 		}
 
-		private NodeCollection _nodes;
-		public Collection<Node> Nodes
+		private TreeNodeCollection _nodes;
+		public Collection<TreeNode> Nodes
 		{
 			get { return _nodes; }
 		}
 
-		private Node _parent;
-		public Node Parent
+		private TreeNode _parent;
+		public TreeNode Parent
 		{
 			get { return _parent; }
 			set 
@@ -109,7 +108,7 @@ namespace AdvTreeControls
 			}
 		}
 
-		public Node PreviousNode
+		public TreeNode PreviousNode
 		{
 			get
 			{
@@ -121,7 +120,7 @@ namespace AdvTreeControls
 			}
 		}
 
-		public Node NextNode
+		public TreeNode NextNode
 		{
 			get
 			{
@@ -186,20 +185,20 @@ namespace AdvTreeControls
 
 		#endregion
 
-		public Node()
+		public TreeNode()
 			: this(string.Empty)
 		{
 		}
 
-		public Node(string text)
+		public TreeNode(string text)
 		{
 			_text = text;
-			_nodes = new NodeCollection(this);
+			_nodes = new TreeNodeCollection(this);
 		}
 
 		private TreeModel FindModel()
 		{
-			Node node = this;
+			TreeNode node = this;
 			while (node != null)
 			{
 				if (node.Model != null)

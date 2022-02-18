@@ -7,24 +7,24 @@ namespace AdvTreeControls
 {
 	public class TreeModel : ITreeModel
 	{
-		private Node _root;
-		public Node Root
+		private TreeNode _root;
+		public TreeNode Root
 		{
 			get { return _root; }
 		}
 
-		public Collection<Node> Nodes
+		public Collection<TreeNode> Nodes
 		{
 			get { return _root.Nodes; }
 		}
 
 		public TreeModel()
 		{
-			_root = new Node();
+			_root = new TreeNode();
 			_root.Model = this;
 		}
 
-		public TreePath GetPath(Node node)
+		public TreePath GetPath(TreeNode node)
 		{
 			if (node == _root)
 				return TreePath.Empty;
@@ -40,7 +40,7 @@ namespace AdvTreeControls
 			}
 		}
 
-		public Node FindNode(TreePath path)
+		public TreeNode FindNode(TreePath path)
 		{
 			if (path.IsEmpty())
 				return _root;
@@ -48,9 +48,9 @@ namespace AdvTreeControls
 				return FindNode(_root, path, 0);
 		}
 
-		private Node FindNode(Node root, TreePath path, int level)
+		private TreeNode FindNode(TreeNode root, TreePath path, int level)
 		{
-			foreach (Node node in root.Nodes)
+			foreach (TreeNode node in root.Nodes)
 				if (node == path.FullPath[level])
 				{
 					if (level == path.FullPath.Length - 1)
@@ -65,9 +65,9 @@ namespace AdvTreeControls
 
 		public System.Collections.IEnumerable GetChildren(TreePath treePath)
 		{
-			Node node = FindNode(treePath);
+			TreeNode node = FindNode(treePath);
 			if (node != null)
-				foreach (Node n in node.Nodes)
+				foreach (TreeNode n in node.Nodes)
 					yield return n;
 			else
 				yield break;
@@ -75,7 +75,7 @@ namespace AdvTreeControls
 
 		public bool IsLeaf(TreePath treePath)
 		{
-			Node node = FindNode(treePath);
+			TreeNode node = FindNode(treePath);
 			if (node != null)
 				return node.IsLeaf;
 			else
@@ -97,7 +97,7 @@ namespace AdvTreeControls
 		}
 
 		public event EventHandler<TreeModelEventArgs> NodesInserted;
-		internal void OnNodeInserted(Node parent, int index, Node node)
+		internal void OnNodeInserted(TreeNode parent, int index, TreeNode node)
 		{
 			if (NodesInserted != null)
 			{
@@ -108,7 +108,7 @@ namespace AdvTreeControls
 		}
 
 		public event EventHandler<TreeModelEventArgs> NodesRemoved;
-		internal void OnNodeRemoved(Node parent, int index, Node node)
+		internal void OnNodeRemoved(TreeNode parent, int index, TreeNode node)
 		{
 			if (NodesRemoved != null)
 			{

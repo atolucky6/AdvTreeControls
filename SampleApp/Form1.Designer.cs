@@ -29,29 +29,97 @@ namespace SampleApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeViewAdv1 = new AdvTreeControls.TreeViewAdv();
+            this.components = new System.ComponentModel.Container();
+            AdvTreeControls.TreeColumn treeColumn1 = new AdvTreeControls.TreeColumn();
+            this._treeNode = new AdvTreeControls.TreeViewAdv();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // treeViewAdv1
+            // _treeNode
             // 
-            this.treeViewAdv1.BackColor = System.Drawing.SystemColors.Window;
-            this.treeViewAdv1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.treeViewAdv1.DragDropMarkColor = System.Drawing.Color.Black;
-            this.treeViewAdv1.LineColor = System.Drawing.SystemColors.ControlDark;
-            this.treeViewAdv1.Location = new System.Drawing.Point(12, 12);
-            this.treeViewAdv1.Model = null;
-            this.treeViewAdv1.Name = "treeViewAdv1";
-            this.treeViewAdv1.SelectedNode = null;
-            this.treeViewAdv1.Size = new System.Drawing.Size(278, 324);
-            this.treeViewAdv1.TabIndex = 0;
-            this.treeViewAdv1.Text = "treeViewAdv1";
+            this._treeNode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._treeNode.BackColor = System.Drawing.SystemColors.Window;
+            treeColumn1.Header = "Name";
+            treeColumn1.Width = 200;
+            this._treeNode.Columns.Add(treeColumn1);
+            this._treeNode.Cursor = System.Windows.Forms.Cursors.Default;
+            this._treeNode.DragDropMarkColor = System.Drawing.Color.Black;
+            this._treeNode.FullRowSelect = true;
+            this._treeNode.KeepNodesExpanded = true;
+            this._treeNode.LineColor = System.Drawing.SystemColors.ControlDark;
+            this._treeNode.Location = new System.Drawing.Point(23, 12);
+            this._treeNode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this._treeNode.Model = null;
+            this._treeNode.Name = "_treeNode";
+            this._treeNode.SelectedNode = null;
+            this._treeNode.ShowNodeToolTips = true;
+            this._treeNode.Size = new System.Drawing.Size(397, 449);
+            this._treeNode.TabIndex = 0;
+            this._treeNode.Text = "treeViewAdv1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(542, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Add Root Node";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(542, 70);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Remove";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(542, 41);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(111, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Add Child Node";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(659, 41);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(111, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Insert Node";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.treeViewAdv1);
+            this.ClientSize = new System.Drawing.Size(782, 632);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this._treeNode);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -61,7 +129,12 @@ namespace SampleApp
 
         #endregion
 
-        private AdvTreeControls.TreeViewAdv treeViewAdv1;
+        private AdvTreeControls.TreeViewAdv _treeNode;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Krypton.Toolkit" Version="60.22.2.32" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AdvTreeControls\AdvTreeControls.csproj" />
   </ItemGroup>
 
