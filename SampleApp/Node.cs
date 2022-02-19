@@ -25,6 +25,19 @@ namespace SampleApp
             }
         }
 
+        public string Test { get; set; }
+
+        // AddCommand -> CommandParameter 
+        public void Add(object parameter)
+        {
+
+        }
+
+        public bool CanAdd(object parameter)
+        {
+            return false;
+        }
+
         public string DisplayInfo { get; set; }
 
         public NodeCollection ChildNodes { get; set; }

@@ -41,10 +41,12 @@ namespace SampleApp
             this._treeView.DragDropMarkColor = System.Drawing.SystemColors.MenuHighlight;
             this._treeView.DragDropMarkWidth = 2F;
             this._treeView.FullRowSelect = true;
+            this._treeView.Indent = 22;
             this._treeView.LineColor = System.Drawing.SystemColors.ControlDark;
             this._treeView.Location = new System.Drawing.Point(0, 0);
             this._treeView.Model = null;
             this._treeView.Name = "_treeView";
+            this._treeView.RowHeight = 22;
             this._treeView.SelectedNode = null;
             this._treeView.Size = new System.Drawing.Size(600, 542);
             this._treeView.TabIndex = 0;
